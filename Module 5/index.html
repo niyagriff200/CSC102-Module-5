@@ -1,0 +1,159 @@
+<!--10/17/24 Shaniya J Griffin
+ Assignment 1.1-->
+
+<!--10/23/24 SJG
+ Assignment 2.1-->
+<!--Changes:
+    1. Moved images to center of page.
+    2. Changed name of css document (from index.css to main.css)
+    3. Connected Boards and Index html pages
+ -->
+<!--10/24/24 SJG
+ Assignment 2.1-->
+<!--Changes:
+    1. Made sidebar for HTML connections
+    2. Connected game.html
+    3. Changed background color (it was kinda hard to see the red text with the blue background I had before)
+    4. Centered all text
+-->
+<!--10/31/24
+Assignment 3.2
+Changes:
+    1. I created a login that will take you to the palindrome checker and a secret message-->
+<!--11/1/24
+Changes:
+    1.I added an id to the input submit-->
+<!--11/7/24
+Changes:
+    1. I added a sidebar navigation, I felt that the top of page was getting a little cluttered. (I'll also edit the other html pages at a later date, I will probably only connect them all to the index page, and have the index page connect to all of them)-->
+<!--Assignment 5.1
+11/12/24
+Changes:
+    1. I am adding the table here. It will compare holidays for the US, CA, and UK.
+    2. I am changing the divs to nav and main. And adding the header and footer tags-->
+<!--11/13/24
+Changes:
+    1. I removed the index navigation link. I figured it didn't make a lot of sense to have it when the user is already on the index page.
+    2. I also added two more countries to the table (JP and MX)-->
+<!--11/14/24
+Changes:
+    1. I added the thead and tbody tags into the table-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Awesome Holidays</title>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <header>
+        <!--Connection between Index and Boards (and Games and Animals and Palindrom Checker/SecretMessage)-->
+            <nav>
+                <a onclick="newTab();">Boards</a><br>
+                <a href="game.html">Games</a><br>
+                <a href="animal.html">Animals</a>
+            
+            <!-- Login Form -->
+                <form id="inputForm" onsubmit="return false">
+                    <h3>To go to Palindrome Checker and Secret Message</h3>
+                    Username: <input id="username" type="text"><br>
+                    Password: <input id="password" type="password"><br>
+                    <input id="validate" type="submit" value="Submit">
+                </form>
+                <p id="loginError" style="color: red;"></p>
+            </nav>
+            <!--Title-->
+            <h1>Awesome Holidays</h1>
+        </header>
+        <main id="content">
+            <!--Halloween-->
+            <h3 id="spooky">Halloween</h3>
+            <p>The first holiday I'll mention is Halloween. You can dress up as your favorite character and eat as much candy as you want!</p>
+            <div>
+                <img id="memeimage1" src="Images/Funny-Halloween-Meme.jpg" width="200" alt="Picture of pumpkin throwing up its insides"/>
+            </div>
+            <!--Christmas-->
+            <h3 id="presents">Christmas</h3>
+            <p>The next holiday and my favorite is Christmas! Experience the gift of giving and receiving many presents!</p>
+            <div>
+                <img id="memeimage2" src="Images/Christmas-Cat-Meme.jpeg" width="200" alt="Picture of a cat relaxing after destroying presents"/>
+            </div>
+            <!--Valentine-->
+            <h3 id="hearts">Valentines</h3>
+            <p>Valentines day is for all the couples out there. Remember to give chocolate and flowers!</p>
+            <div>
+                <img id="memeimage3" src="Images/ValentineMeme-14.jpg" width="200" alt="Picture of a judgmental cat"/>
+            </div>
+            <!--April Fools-->
+            <h3 id="pranks">April Fools</h3>
+            <p>Pull pranks on all your friends on April Fools day! Just remember there will be payback next year.</p>
+            <div>
+                <img id="memeimage4" src="Images/April-Fool's-Day-Meme.jpeg" width="200" alt="Picture of an orangutan so done with life"/>
+            </div>
+
+            <!--Comparison Table for assignment 5.1-->
+            <!--This table compares the percentage of people that celebrates certain holidays in America, Canada, and the United Kingdom-->
+            <!--I had trouble finding percentages for some holidays so I marked them N/A-->
+            <center>
+                <table border="5">
+                    <thead id="holidays">
+                        <h1>Table</h1>
+                        <h3>Percentage of people who celebrate: </h3>
+                        <th style="background-color: white;"></th>
+                        <th>Halloween</th>
+                        <th>Christmas</th>
+                        <th>Valentines</th>
+                        <th>April Fools</th>
+                    </thead>
+                    <tbody>
+                        <tr id="US">
+                            <th>America</th>
+                            <td>65% to 75%</td>
+                            <td>90% to 95%</td>
+                            <td>52%</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr id="CA">
+                            <th>Canada</th>
+                            <td>57%</td>
+                            <td>51%</td>
+                            <td>39%</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr id="UK">
+                            <th>United Kingdom</th>
+                            <td>25%</td>
+                            <td>93%</td>
+                            <td>36%</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr id="JP">
+                            <th>Japan</th>
+                            <td>58%</td>
+                            <td>1.5%</td>
+                            <td>N/A</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr id="MX">
+                            <th>Mexico</th>
+                            <td>7%</td>
+                            <td>93%</td>
+                            <td>45%</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </main><br><br>
+        <footer>
+           &copy Shaniya Griffin<br>
+            University of Advancing Technology<br>
+            2625 W Baseline Rd<br>
+            Tempe, AZ 85283
+        </footer>
+    </body>
+    </html>
+    

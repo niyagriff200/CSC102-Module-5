@@ -1,0 +1,104 @@
+body {
+    background-image: linear-gradient(skyblue, white);
+    text-align: center;
+}
+
+h1 {
+    color:crimson
+}
+
+nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkblue;
+    color: aliceblue;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: cursive;
+}
+
+.nav a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: aqua;
+    display: block;
+}
+
+.nav a:hover {
+    color: aliceblue;
+}
+
+main, header, footer {
+    margin-left: 200px;
+    padding: 0px 10px;
+}
+
+#spooky {
+    color: orange;
+}
+
+#presents {
+    color:aliceblue;
+}
+
+#hearts {
+    color: pink;
+}
+
+#pranks {
+    color:green;
+}
+
+p {
+    color: darkred;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+
+aside {
+    flex: 1 0 10%;
+}
+
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:aqua;
+}
+
+table {
+    border-color: darkblue;
+    font-family: cursive;
+}
+
+tr {
+    border: 0;
+    border-color: lightskyblue;
+}
+
+th {
+    color: blue;
+    background-color: lightcyan;
+}
+
+td {
+    font-weight: bold;
+    color: aqua;
+}

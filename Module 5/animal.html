@@ -1,0 +1,127 @@
+<!--11/7/24 Shaniya Griffin
+ Assignments 4.1 and 4.2-->
+ <!--11/8/24 SJG
+ Changes: 
+    1. I added a back button here, so that users can go back to the main page (index.html)-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="animal.css">
+     <script src="animal.js" defer></script>
+     <title>Animals!</title>
+ </head>
+ <body>
+    <!--html connection for index-->
+    <a href="index.html"><button>Back</button></a>
+    <!--Heading-->
+    <h1>Learn About Animals!</h1>
+ 
+    <!--Audio for assignment 4.2-->
+    <p>Do you want to listen to background music?</p>
+    <button id="start" onclick="musicStart()">Yes</button>
+    <button id="stop" onclick="musicStop()">No</button>
+    <br><br>
+ 
+    <!--Pictures with sound effects-->
+    <section class="gallery">
+    <!--Bear-->
+        <div class="animalPics">
+            <audio id="bearPic" src="Sound/bear-191995.mp3" preload="auto"></audio>
+            <img src="Images/Bear1.jpeg" width="150" alt="image of bear" onclick="playBear()">
+            <h3>Bear</h3>
+            <p><strong>Fun fact:</strong> Sun bears are the smallest with most adults only reaching at 4 ft and 60 lbs. Polar bears are the largest with some becoming positively gigantic at 10 ft and 1,700 lbs.</p>
+        </div>
+    <!--Elephant-->
+        <div class="animalPics">
+            <audio id="elephantPic" src="Sound/elephant-225994.mp3" preload="auto"></audio>
+            <img src="Images/Elephant1.jpeg" width="150" alt="image of elephant" onclick="playElephant()">
+            <h3>Elephant</h3>
+            <p><strong>Fun Fact: </strong>The average life span for an elephant in the wild is from 50 to 70 years. They oldest known elephant in the world lived to be 82 years of age.</p>
+        </div>
+    <!--Lion-->
+        <div class="animalPics">
+            <audio id="lionPic" src="Sound/lion-roar-6011.mp3" preload="auto"></audio>
+            <img src="Images/Lion1.webp" width="150" alt="image of lion" onclick="playLion()">
+            <h3>Lion</h3>
+            <p><strong>Fun fact: </strong>Lions have a roar that can carry up to 8km (5 miles).</p>
+         </div>
+     <!--Wolf-->
+        <div class="animalPics">
+            <audio id="wolfPic" src="Sound/wolf-howling-140235.mp3" preload="auto"></audio>
+            <img src="Images/Wolf1.jpeg" width="150" alt="image of wolf" onclick="playWolf()">
+            <h3>Wolf</h3>
+            <p><strong>Fun Fact: </strong>Wolves can swim distances of up to 8 miles (13 kilometers) aided by small webs between their toes.</p>
+        </div>
+    </section>
+    <section class="music">
+    <!--Songs-->
+        <h2>Nature Songs</h2>
+        <!--Bear-->
+        <div class="animalMusic">
+            <h4>Bartoks Bear Dance <br> By: Alfred_Grupstra <br> Downloaded from: Pixabay</h4>
+            <audio controls>
+                <source src="Sound/bartoks-bear-dance-142326.mp3">
+            </audio>
+         </div>
+ 
+         <!--Elephant-->
+         <div class="animalMusic">
+            <h4>Baby Elephant Walk <br> Written by:  Henry Mancini</h4>
+            <audio controls>
+                <source src="Sound/Henry Mancini - Baby Elephant Walk.mp3">
+            </audio>
+        </div>
+         
+        <!--Lion-->
+        <div class="animalMusic">
+            <h4>The Lion Sleeps Tonight <br> Written by: Solomon Linda <br> Sung by: The Tokens</h4>
+            <audio controls>
+                <source src="Sound/Lion sleeps tonight (wimoweh).mp3">
+            </audio>
+        </div>
+ 
+        <!--Wolf-->
+        <div class="animalMusic">
+            <h4>Dances with Wolves<br> By: JosepMonter <br>Downloaded from: Pixabay</h4>
+            <audio controls>
+                <source src="Sound/dances-with-wolves-2703.mp3">
+            </audio>
+        </div>
+    </section>
+ 
+    <!--Movements for assignment 4.1-->
+    <section class="movements">
+        <h2>Animal Movements</h2>
+        <!--Bear-->
+        <div class="animalMovements">
+            <button id="bearMove" onclick="startBear()">Move Bears 😁</button>
+            <button id="stopBearMove" onclick="stopBear()">Stop Bear 😢</button><br><br>
+            <img id="bearImg" src="Images/Bear2.jpeg" width="200">
+        </div>
+ 
+        <!--Elephant-->
+        <div class="animalMovements">
+            <button id="elephantMove" onclick="startElephant()">Move Elephant 😁</button>
+            <button id="stopElephantMove" onclick="stopElephant()">Stop Elephant 😢</button><br><br>
+            <img id="elephantImg" src="Images/Elephant2.jpeg" width="200">
+        </div>
+ 
+        <!--Lion-->
+        <div class="animalMovements">
+            <button id="lionMove" onclick="startLion()">Move Lion 😁</button>
+            <button id="stopLionMove" onclick="stopLion()">Stop Lion 😢</button><br><br>
+            <img id="lionImg" src="Images/Lion3.jpg" width="200">
+        </div>
+ 
+        <!--Wolf-->
+        <div class="animalMovements">
+            <button id="wolfMove" onclick="startWolf()">Move Wolf 😁</button>
+            <button id="stopWolfMove" onclick="stopWolf()">Stop Wolf 😢</button><br><br>
+            <img id="wolfImg" src="Images/Wolf2.jpeg" width="200">
+        </div>
+    </section>
+ </body>
+ </html>
+ 

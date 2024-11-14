@@ -1,0 +1,42 @@
+<!--11/8/24 SJG
+Changes made:
+1. I added the back button for index-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Type Game</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <!--start screen-->
+    <div id="startScreen">
+        <!--Connection for Index and Boards (changed 11/8/24)-->
+        <a href="index.html">Back</a><br>
+        <h1>Quick Type</h1>
+        <h3>Type quickly!</h3>
+        <h3>Don't make mistakes!</h3>
+        <button id="startButton" onclick="startButton()">START GAME</button>
+    </div>
+    <!--game screen; It's where users will play the game-->
+    <div id="gameScreen" style="display:none;">
+        <p id="textDisplay"></p>
+        <p id="timerDisplay"></p>
+        <input type="text" id="textInput" placeholder="Typing..." autofocus>
+    </div>
+    <!--game over screen; It's where users will see their score-->
+    <div id="gameOverScreen" style="display:none;">
+        <h2>Game Over</h2>
+        <p id="finalScore"></p>
+        <p id="highScore"></p>
+        <button id="restartButton" onclick="restartButton()">RESTART GAME</button>
+    </div>
+    <!--sound effects -->
+    <audio id="gameStartSound" src="Sound/game-start-6104.mp3" type="audio/mp3" preload="auto"></audio>
+    <audio id="correctSound" src="Sound/ding-36029.mp3" type="audio/mp3" preload="auto"></audio>
+    <audio id="wrongSound" src="Sound/wrong-47985.mp3" type="audio/mp3" preload="auto"></audio>
+</body>
+</html>

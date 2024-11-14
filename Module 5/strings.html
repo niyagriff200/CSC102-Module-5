@@ -1,0 +1,47 @@
+<!--Shaniya J Griffin
+    Assignments 3.1 and 3.2
+ 10/30/24 - 
+    1. I created the palindrome checker, however I need to rewrite the code in javascript (I didn't make it a loop)
+    2. I created the secret message, but it can only be accessed with the username and password.
+-->
+<!--10/31/24 SJG
+Changes: 
+    1. I changed the background to background, font-family, and color
+    2. I'm having some issues with the css portion. --> 
+<!--11/8/24 SJG
+Changes: 
+    1. I added the back button here-->   
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrome Checker and Secret Message</title>
+        <link rel="stylesheet" href="strings.css">
+        <script src="strings.js" defer></script>
+    </head>
+    <body>
+        <!--Go back to index.html-->
+        <a href="index.html"><button style="background-color: aliceblue; color: blue;">Return to Index</button></a>
+        
+        <!-- Palindrome Checker for assignment 3.1 -->
+        <h3>Palindrome Checker</h3>
+        <p id="definition"><strong>Palindrome</strong> - <em>noun</em><br>
+        a word, phrase, or sequence that reads the same backward as forward.</p>
+        <p id="instructions">Please place the word you would like to check in the text box below.</p>
+        <input type="text" id="palindromecheck" placeholder="Your word goes here!" autofocus>
+        <button onclick="isPalindrome()">Submit</button>
+        <p id="answer"></p>
+    
+        <!-- User Validation for assignment 3.2 -->
+        <form id="inputForm" onsubmit="return false">
+            <h3>Secrets Shhh!</h3>
+            Find the answer to the ultimate question of life, the universe, and everything!<br>
+            Username: <input type="text" id="username" placeholder="Enter your name"><br>
+            Password: <input type="password" id="password" placeholder="Enter your password"><br>
+            <input id="validate" type="submit" value="Submit">
+        </form>
+        <p id="wrongCombination" style="color: red;"></p>
+        <p id="correctCombination"></p>
+    </body>
+    </html>
